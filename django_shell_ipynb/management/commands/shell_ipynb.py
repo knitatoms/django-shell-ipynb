@@ -10,7 +10,7 @@ class Command(NoArgsCommand):
 
     def ipython_notebook(self):
         # analogous to the calls in the django.core shell command
-        from IPython.notebook.notebookapp import NotebookApp
+        from IPython.html.notebookapp import NotebookApp
         app = NotebookApp.instance()
         app.initialize()
 
