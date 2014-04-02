@@ -38,7 +38,7 @@ class Command(NoArgsCommand):
         ppl = pps.split(os.pathsep)
         # path containing manage.py
         project_path = os.path.abspath(os.path.dirname(sys.argv[0]))
-        print project_path
+        print(project_path)
         # add it
         ppl.append(project_path)
         # and set it
